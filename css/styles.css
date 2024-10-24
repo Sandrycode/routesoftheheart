@@ -558,18 +558,19 @@ a {
 -- CSS PROYECTO VIAJES MEDIAQUERIES --
  ************************************/
 
-/* Para tablets y pantallas más pequeñas */
+/* Para tablets y pantallas más pequeñas */ 
 @media (max-width: 1024px) {
     .nav__bar {
         flex-direction: column; /* Cambiar a columna en tabletas */
         align-items: flex-start; /* Alinear a la izquierda */
+        width: 100%; /* Asegurar que ocupen todo el ancho */
     }
 
     .nav__links {
         flex-direction: row; /* Cambiar a dirección horizontal */
-        gap: 1rem; /* Espacio entre los enlaces */
-        width: 100%; /* Asegurar que ocupen todo el ancho */
+        gap: 1px; /* Espacio mínimo entre enlaces */
         justify-content: center; /* Centrar enlaces */
+        width: 100%; /* Asegurar que ocupen todo el ancho */
     }
 
     .header__container {
@@ -599,8 +600,16 @@ a {
         grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     }
 
+    .discover__card {
+        margin: 0.5rem 0; /* Márgenes más pequeños */
+    }
+
     .blogs__grid {
         grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    }
+
+    .blogs__card .blogs__content a {
+        font-size: 0.875rem; /* Reducir tamaño de fuente */
     }
 
     .journals__grid {
@@ -615,6 +624,18 @@ a {
         grid-template-columns: 1fr; /* Una sola columna */
     }
 
+   .discover__card__content {
+        position: relative; /* Asegurar que el contenido esté bien posicionado */
+        transform: translateY(0); /* Ajustar el desplazamiento del texto */
+        text-align: center; /* Centrar el texto */
+        background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para legibilidad */
+        padding: 1rem; /* Añadir padding para evitar solapamiento */
+    }
+
+    .contact__card {
+        max-width: 200px; /* Tamaño reducido */
+    }
+
     .footer__socials {
         flex-direction: row; /* Alinear horizontalmente */
         justify-content: center; /* Centrar iconos */
@@ -624,7 +645,7 @@ a {
         flex-direction: row; /* Alinear horizontalmente */
         justify-content: center; /* Centrar enlaces */
         flex-wrap: wrap; /* Permitir el ajuste */
-        gap: 1rem; /* Espaciado entre enlaces */
+        gap: 1px; /* Espaciado mínimo entre enlaces */
     }
 }
 
@@ -633,12 +654,14 @@ a {
     .nav__bar {
         padding: 1rem 0; /* Ajustar el padding */
         flex-direction: column; /* Cambiar a columna para móviles */
+        align-items: center; /* Alinear al centro */
+        width: 100%; /* Asegurar que ocupen todo el ancho */
     }
 
     .nav__links {
         flex-direction: row; /* Alinear horizontalmente */
         justify-content: center; /* Centrar enlaces */
-        gap: 1rem; /* Espacio entre los enlaces */
+        gap: 1px; /* Espacio mínimo entre los enlaces */
         width: 100%; /* Asegurar que ocupen todo el ancho */
     }
 
@@ -659,6 +682,26 @@ a {
         display: none; /* Ocultar el div about__flex */
     }
 
+    .discover__grid {
+        grid-template-columns: 1fr; /* Una columna */
+    }
+
+    .discover__card {
+        margin: 0.5rem 0; /* Márgenes más pequeños */
+    }
+
+    .discover__card__content {
+        position: relative; /* Asegurar que el contenido esté bien posicionado */
+        transform: translateY(0); /* Ajustar el desplazamiento del texto */
+        text-align: center; /* Centrar el texto */
+        background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para legibilidad */
+        padding: 1rem; /* Añadir padding para evitar solapamiento */
+    }
+
+    .blogs__card .blogs__content a {
+        font-size: 0.75rem; /* Reducir tamaño de fuente */
+    }
+
     .contact__card {
         max-width: 200px; /* Tamaño reducido */
     }
@@ -667,7 +710,7 @@ a {
         flex-direction: row; /* Alinear horizontalmente */
         justify-content: center; /* Centrar enlaces */
         flex-wrap: wrap; /* Permitir el ajuste */
-        gap: 1rem; /* Espaciado entre enlaces */
+        gap: 1px; /* Espaciado mínimo entre enlaces */
     }
 
     .footer__socials {
@@ -680,3 +723,4 @@ a {
         display: none; /* Ocultar la imagen en móviles */
     }
 }
+

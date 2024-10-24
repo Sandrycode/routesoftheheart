@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />  <!-- biblioteca de iconos -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script> <!-- para crear el movimento y no se vea estático -->
+    <title>Routes of the Heart</title>
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <div class="nav__bar">
+                <div class="nav__logo"><a href="#">Routes of the Heart</a></div>
+                <ul class="nav__links">
+                    <li class="link"><a href="#home">Home</a></li>
+                    <li class="link"><a href="#about">Sobre nosotros</a></li>
+                    <li class="link"><a href="#discover">Lugares</a></li>
+                    <li class="link"><a href="#blog">Blog</a></li>
+                    <li class="link"><a href="#journals">Diarios</a></li>
+                    <li class="link"><a href="#gallery">Galería</a></li>
+                    <li class="link"><a href="#contact">Contacto</a></li>
+                    <li class="link search"></li>
+                    <span><i class="ri-search-line"></i></span>
+                </ul>
+            </div>
+        </nav>
+        <div class="section__container header__container">
+            <h1>La nueva forma de planificar tu nueva aventura.</h1>
+            <h4>Explora el colorido mundo.</h4>
+            <button class="btn">
+                Infórmate<i class="ri-arrow-right-line"></i>
+            </button>
+        </div>
+        <img src="imagenes/planifica_tu_aventura.jpg" alt="Planifica tu aventura" class="header__background-image">
+</header>
+    </header>
+
+    <section class="about" id="about">
+        <div class="section__container about__container">
+            <div class="about__content">
+                <h2 class="section__header">Acerca de nosotros</h2>
+                <p class="section__subheader">
+                    Nuestra misión es encender el espíritu del descubrimiento en el corazón de cada viajero, ofreciendo
+                    itinerarios meticulosamente elaborados que combinan actividades llenas de adrenalina con paisajes
+                    sobrecogedores. Con un equipo de trotamundos experimentados, nos aseguramos de que cada expedición
+                    esté impregnada de emoción, de gracia a nuestro planeta. Embárcate en el viaje de tu vida con
+                    nosotros, redefiniendo el arte de la exploración.
+                </p>
+                <div class="about__flex">
+                    <div class="about__card">
+                        <h4>270</h4>
+                        <p>Viajes realizados</p>
+                    </div>
+                    <div class="about__card">
+                        <h4>186</h4>
+                        <p>Guías turísticos</p>
+                    </div>
+                    <div class="about__card">
+                        <h4>160</h4>
+                        <p>Destinos</p>
+                    </div>
+                </div>
+                <button class="btn">
+                    Sigue leyendo <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+            <div class="about__image">
+                <img src="imagenes/viaja_con_nosotros.jpg" alt="Viaja con nosotros">
+            </div>
+        </div>
+    </section>
+
+    <section class="discover" id="discover">
+        <div class="section__container discover__container">
+            <h2 class="section__header">Descubre los lugares más atractivos</h2>
+            <p class="section__subheader">
+                Veamos el mundo contigo y tu familia.
+            </p>
+            <div class="discover__grid">
+                <div class="discover__card">
+                    <div class="discover__image">
+                        <img src="imagenes/noruega-auroras_boreales.jpg" alt="Auroras boreales de Noruega">
+                    </div>
+                    <div class="discover__card__content">
+                        <h4>Noruega</h4>
+                        <p>
+                            Descubre la belleza inigualable de Noruega, una tierra donde las montañas escarpadas y las
+                            encantadoras auroras boreales dibujan un telón de fondo surrealista.
+                        </p>
+                        <button class="discover__btn">
+                            Descubre más <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="discover__card">
+                    <div class="discover__image">
+                        <img src="imagenes/londres.jpg" alt="Londres">
+                    </div>
+                    <div class="discover__card__content">
+                        <h4>Londres</h4>
+                        <p>
+                            Desde la escalada urbana hasta el paseo en bicicleta por los parques reales, Londres invita
+                            a los entusiastas de la aventura a aprovechar sus oportunidades.
+                        </p>
+                        <button class="discover__btn">
+                            Descubre más <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="discover__card">
+                    <div class="discover__image">
+                        <img src="imagenes/japan-monte_fuji.jpg" alt="Monte Fuji en Japón">
+                    </div>
+                    <div class="discover__card__content">
+                        <h4>Japan</h4>
+                        <p>
+                            Desde escalar los emblemáticos picos del monte Fuji hasta sumergirse en la serenidad, Japón
+                            ofrece a los aventureros un cautivador tesoro cultural.
+                        </p>
+                        <button class="discover__btn">
+                            Descubre más <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blog">
+        <div class="blogs__container">
+            <h2 class="section__header">Lo último en los blogs</h2>
+            <p class="section__subheader">Queremos ayudarte a viajar mejor.</p>
+            <div class="blogs__grid">
+                <div class="blogs__card">
+                    <img src="imagenes/errores_al_viajar.jpg" alt="Blog: errores al viajar" />
+                    <div class="blogs__content">
+                        <a href="#" target="_blank">10 errores que cometen los que viajan por primera vez y cómo evitarlos!</a>
+                    </div>
+                </div>
+
+                <div class="blogs__card">
+                    <img src="imagenes/diferente_idioma.jpg" alt="Blog: diferente idioma" />
+                    <div class="blogs__content">
+                        <a href="#" target="_blank">¿Qué se siente al transladarse a un país en el que no se habla el idioma?</a>
+                    </div>
+                </div>
+
+                <div class="blogs__card">
+                    <img src="imagenes/oslo.jpg" alt="Blog: Oslo" />
+                    <div class="blogs__content">
+                        <a href="#" target="_blank">Explorando los rincones más recónditos de Oslo | Galopar por el mundo.</a>
+                    </div>
+                </div>
+
+                <div class="blogs__card">
+                    <img src="imagenes/peru-arco_iris.jpg" alt="Blog: El arco iris de Perú" />
+                    <div class="blogs__content">
+                        <a href="#" target="_blank">11 cosas que debes saber antes de visitar la montaña del arco iris en Perú.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="journals" id="journals">
+        <div class="section__container journals__container">
+            <h2 class="section__header">Los diarios de viaje</h2>
+            <p class="section__subheader">
+                Un diario es un lugar donde anotar las cosas nuevas que has descubierto al explorar los distintos
+                lugares que visitas.
+            </p>
+            <div class="journals__grid">
+                <div class="journals__card">
+                    <img src="imagenes/menos_plasticos.jpg" alt="Menos plásticos" />
+                    <div class="journals__content">
+                        <div class="journals__author">
+                            <img src="imagenes/alice_donaldson.jpg" alt="Autor Alice Donaldson">
+                            <p>Por Alice Donaldson</p>
+                        </div>
+                        <h4>Cómo utilizar menos plástico cuando se viaja.</h4>
+                        <div class="journals__footer">
+                            <p>18 Mayo 2024</p>
+                            <span>
+                                <a href="#"><i class="ri-share-fill"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journals__card">
+                    <img src="imagenes/denver.jpg" alt="Denver" />
+                    <div class="journals__content">
+                        <div class="journals__author">
+                            <img src="imagenes/charlie_cook.jpg" alt="Autor Charlie Cook">
+                            <p>Por Charlie Cook</p>
+                        </div>
+                        <h4>Los mejores viajes de fin de semana desde Denver.</h4>
+                        <div class="journals__footer">
+                            <p>22 Junio 2024</p>
+                            <span>
+                                <a href="#"><i class="ri-share-fill"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journals__card">
+                    <img src="imagenes/proxima_aventura.jpg" alt="Próxima aventura" />
+                    <div class="journals__content">
+                        <div class="journals__author">
+                            <img src="imagenes/nichole_hamilton.jpg" alt="Autor Nichole Hamilton">
+                            <p>Por Nichole Hamilton</p>
+                        </div>
+                        <h4>Consejos y trucos para planificar tu próxima aventura.</h4>
+                        <div class="journals__footer">
+                            <p>5 Julio 2024</p>
+                            <span>
+                                <a href="#"><i class="ri-share-fill"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journals__card">
+                    <img src="imagenes/albergue.jpg" alt="Albergues" />
+                    <div class="journals__content">
+                        <div class="journals__author">
+                            <img src="imagenes/travis_pemberton.jpg" alt="Autor Travis Pemberton">
+                            <p>Por Travis Pemberton</p>
+                        </div>
+                        <h4>Guía de albergues para viajeros principiantes.</h4>
+                        <div class="journals__footer">
+                            <p>14 Julio 2024</p>
+                            <span>
+                                <a href="#"><i class="ri-share-fill"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journals__card">
+                    <img src="imagenes/trucos_viajero.jpg" alt="Trucos del viajero" />
+                    <div class="journals__content">
+                        <div class="journals__author">
+                            <img src="imagenes/scarlet_johnson.jpg" alt="Autor Scarlet Johnson">
+                            <p>Por Scarlet Johnson</p>
+                        </div>
+                        <h4>17 trucos de viaje poco convencionales que necesitas.</h4>
+                        <div class="journals__footer">
+                            <p>10 Septiembre 2024</p>
+                            <span>
+                                <a href="#"><i class="ri-share-fill"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journals__card">
+                    <img src="imagenes/consejos_viaje.jpg" alt="Consejos de viaje" />
+                    <div class="journals__content">
+                        <div class="journals__author">
+                            <img src="imagenes/peter_kendall.jpg" alt="Autor Peter Kendall">
+                            <p>Por Peter Kendall</p>
+                        </div>
+                        <h4>Consejos de viaje que desearás haber conocido antes.</h4>
+                        <div class="journals__footer">
+                            <p>12 Octubre 2024</p>
+                            <span>
+                                <a href="#"><i class="ri-share-fill"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="journals__btn">
+                <button class="btn">
+                    Ver todos los diarios <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="hero">
+        <div class="section__container hero__container">
+            <p>Raido.</p>
+        </div>
+    </section> -->
+
+    <section class="gallery" id="gallery">
+        <div class="gallery__container">
+            <h2 class="section__header">Galería de fotos</h2>
+            <p class="section__subheader">
+                Explora los lugares más bellos del mundo.
+            </p>
+            <div class="gallery__grid">
+                <div class="gallery__card">
+                    <img src="imagenes/noruega_aurora_boreal.jpg" alt="Aurora boreal de Noruega" />
+                    <div class="gallery__content">
+                        <h4>Aurora boreal</h4>
+                        <p>Noruega</p>
+                    </div>
+                </div>
+
+                <div class="gallery__card">
+                    <img src="imagenes/thailandia-krabi.jpg" alt="Krabi en Thailandia" />
+                    <div class="gallery__content">
+                        <h4>Krabi</h4>
+                        <p>Thailandia</p>
+                    </div>
+                </div>
+
+                <div class="gallery__card">
+                    <img src="imagenes/indonesia-bali.jpg" alt="Bali en Indonesia" />
+                    <div class="gallery__content">
+                        <h4>Bali</h4>
+                        <p>Indonesia</p>
+                    </div>
+                </div>
+
+                <div class="gallery__card">
+                    <img src="imagenes/japan-tokyo.jpg" alt="Tokyo en Japón" />
+                    <div class="gallery__content">
+                        <h4>Tokyo</h4>
+                        <p>Japan</p>
+                    </div>
+                </div>
+
+                <div class="gallery__card">
+                    <img src="imagenes/india-taj_mahal.jpg" alt="Taj Mahal en India" />
+                    <div class="gallery__content">
+                        <h4>Taj Mahal</h4>
+                        <p>India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section__container contact__container">
+            <div class="contact__col">
+                <h4>Contacta con un especialista en viajes.</h4>
+                <p>Siempre respondemos en un plazo de 24 horas.</p>
+            </div>
+            <div class="contact__col">
+                <div class="contact__card">
+                    <span><i class="ri-phone-line"></i></span>
+                    <h4>Llámanos</h4>
+                    <h5>+91 3652145</h5>
+                    <p>Estamos en línea</p>
+                </div>
+            </div>
+
+            <div class="contact__col">
+                <div class="contact__card">
+                    <span><i class="ri-mail-line"></i></span>
+                    <h4>Envíanos una consulta</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="section__container footer__container">
+            <h4>Routes of the Heart</h4>
+            <div class="footer__socials">
+                <span>
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                </span>
+
+                <span>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </span>
+
+                <span>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                </span>
+
+                <span>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                </span>
+            </div>
+            <p>Muchas personas creen que la abundancia, la riqueza o las posibilidades de
+                triunfar en la vida, son limitadas.
+            </p>
+            <ul class="footer__nav">
+                <li class="footer__link"><a href="#home">Home</a></li>
+                <li class="footer__link"><a href="#about">Sobre nosotros</a></li>
+                <li class="footer__link"><a href="#discover">Lugares</a></li>
+                <li class="footer__link"><a href="#blog">Blog</a></li>
+                <li class="footer__link"><a href="#journals">Diarios</a></li>
+                <li class="footer__link"><a href="#gallery">Galería</a></li>
+                <li class="footer__link"><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2024 | Web Design Mastery | Todos los derechos reservados.
+        </div>
+    </section>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
